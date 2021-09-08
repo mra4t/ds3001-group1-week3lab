@@ -6,6 +6,20 @@ output: html_document
 ---
 
 ```{r}
-cars <- mtcars
+cars <- data.frame(mtcars, package="datasets")
+cars <- as.data.frame(cars)
 ```
 
+
+
+```{r}
+
+# Create a base graph
+library(ggplot2)
+str(cars)
+cars$cyl <- as.factor(cars$cyl)
+ggplot(cars, aes(x=hp, y=mpg, color=cyl, shape=cyl)) +
+    geom_point(size=3)
+```
+    
+    

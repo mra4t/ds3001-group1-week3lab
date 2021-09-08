@@ -30,7 +30,17 @@ library(ggplot2)
 str(cars)
 cars$cyl <- as.factor(cars$cyl)
 ggplot(cars, aes(x=hp, y=mpg, color=cyl, shape=cyl)) +
-    geom_point(size=3) + xlab('Horsepower') + ylab('Miles Per Galon')
+    geom_point(size=3) + xlab('Horsepower') + ylab('Miles Per Gallon')
 ```
     
-    
+  
+```{r}
+
+# adding title - Emma 
+library(ggplot2)
+str(cars)
+cars$cyl <- as.factor(cars$cyl)
+ggplot(cars, aes(x=hp, y=mpg, color=cyl, shape=cyl)) +
+    geom_point(size=3) + xlab('Horsepower') + ylab('Miles Per Gallon') + 
+  ggtitle("Horsepower versus Miles Per Gallon")
+```    

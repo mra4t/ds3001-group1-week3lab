@@ -14,12 +14,23 @@ cars <- as.data.frame(cars)
 
 ```{r}
 
-# Create a base graph
+# Create a base graph -- Claire 
 library(ggplot2)
 str(cars)
 cars$cyl <- as.factor(cars$cyl)
 ggplot(cars, aes(x=hp, y=mpg, color=cyl, shape=cyl)) +
     geom_point(size=3)
+```
+
+
+```{r}
+
+# adding labels - Kylie 
+library(ggplot2)
+str(cars)
+cars$cyl <- as.factor(cars$cyl)
+ggplot(cars, aes(x=hp, y=mpg, color=cyl, shape=cyl)) +
+    geom_point(size=3) + xlab('Horsepower') + ylab('Miles Per Galon')
 ```
     
     

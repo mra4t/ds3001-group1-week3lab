@@ -1,0 +1,15 @@
+---
+title: "Week 3 Lab"
+author: "Madeleine Ashby, Kylie Wise, Emma Murphy, Claire Dozier"
+date: "9/8/2021"
+output: html_document
+---
+
+```{r}
+cars <- mtcars
+iris_data <- iris
+air <- airquality
+teeth <- ToothGrowth
+
+```
+

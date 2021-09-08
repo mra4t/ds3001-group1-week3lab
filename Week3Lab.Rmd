@@ -7,9 +7,5 @@ output: html_document
 
 ```{r}
 cars <- mtcars
-iris_data <- iris
-air <- airquality
-teeth <- ToothGrowth
-
 ```
 
